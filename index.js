@@ -45,7 +45,7 @@ function viewCart() {
 
 function total() {
 
-   var total = 0;
+    total = 0;
   for(var i = 0; i < cart.length; i++) {
     total =total +  cart[i].itemPrice;
   }
@@ -76,7 +76,7 @@ function placeOrder(cardNumber) {
   }
   else{
     cart = [];
-    return `Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`;
+    return `Your total cost is $${total}, which will be charged to the card ${cardNumber}.`;
   }
   
   
